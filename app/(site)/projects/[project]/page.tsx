@@ -12,7 +12,7 @@ export default async function Project ({ params }: Props) {
     const project = await getProject(slug);
 
     return (
-        <div className="max-w-3xl mx-auto py-20">
+        <div>
             <header className="flex items-center justify-between">
                 <h1 className="text-5xl drop-shadow font-extrabold bg-gradient-to-r from-red-500 via-blue-500 to-yellow-500 bg-clip-text text-transparent">
                     {project.name}
